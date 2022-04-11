@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QuizTI3</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="email">Email</string>
+    <string name="solicitar_cadastro">Não tem conta? Cadastra-se</string>
+    <string name="esqueci_senha">Esqueci minha senha</string>
+</resources>
