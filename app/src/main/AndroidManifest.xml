@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizTI3">
         <activity
+            android:name=".FormCadastro"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
