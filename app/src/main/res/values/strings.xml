@@ -8,4 +8,20 @@
     <string name="titulo_cadastro">Cadastra-se</string>
     <string name="nome">Nome</string>
     <string name="registrar">Registrar</string>
+    <string name="titulo_cadastro_quiz">Cadastro de Quiz</string>
+    <string name="nome_quiz">Nome do Quiz</string>
+    <string name="sub_titulo">Explicação do Quiz</string>
+    <string name="codigo_quiz">Código quiz</string>
+    <string name="registrar_quiz">Registrar Quiz</string>
+    <string name="titulo_pergunta_quiz">Registrar Pergunta Quiz</string>
+    <string name="pergunta_quiz">Pergunta Quiz</string>
+    <string name="resposta_correta">Resposta correta</string>
+    <string name="resposta_errada">Resposta errada</string>
+    <string name="registrar_pergunta">Registrar pergunta</string>
+    <string name="titulo_lista_quiz">Lista quiz</string>
+    <string name="nome_titulo_quiz">Nome do quiz: JAVA</string>
+    <string name="titulo_lista_aluno_quiz">Pontuação por aluno</string>
+    <string name="titulo_lista_pergunta_quiz">Perguntas por quiz</string>
+
+
 </resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormPergunta">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_pergunta_quiz"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:id="@+id/titulo_cadastro_pergunta_quiz"/>
+
+
+    <View
+        android:id="@+id/containerComponentsCadastro"
+        style="@style/ContainerComponentsGrande"
+        app:layout_constraintStart_toEndOf="wrap_content"
+        app:layout_constraintEnd_toEndOf="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titulo_cadastro_pergunta_quiz"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_pergunta_quiz"
+        style="@style/Edit_Text"
+        android:hint="@string/pergunta_quiz"
+        android:drawableRight="@drawable/ic_quiz"
+        android:inputType="textAutoComplete"
+        android:maxLength="25"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsCadastro" />
+
+    <EditText
+        android:id="@+id/edit_resposta_correta"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_text"
+        android:hint="@string/resposta_correta"
+        android:inputType="textEmailAddress"
+        android:maxLength="25"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/edit_pergunta_quiz" />
+
+    <EditText
+        android:id="@+id/edit_resposta_errada1"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_error"
+        android:hint="@string/resposta_errada"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/edit_resposta_correta" />
+
+    <EditText
+        android:id="@+id/edit_resposta_errada2"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_error"
+        android:hint="@string/resposta_errada"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/edit_resposta_errada1" />
+
+    <EditText
+        android:id="@+id/edit_resposta_errada3"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_error"
+        android:hint="@string/resposta_errada"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/edit_resposta_errada2" />
+
+    <EditText
+        android:id="@+id/edit_resposta_errada4"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_error"
+        android:hint="@string/resposta_errada"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/edit_resposta_errada3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponentsCadastro"
+        android:hint="@string/registrar_pergunta"
+        android:id="@+id/registrar_pergunta"
+        android:layout_marginTop="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

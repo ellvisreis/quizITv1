@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormQuiz">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_cadastro_quiz"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:id="@+id/titulo_cadastro_quiz"/>
+
+
+    <View
+        android:id="@+id/containerComponentsCadastro"
+        style="@style/ContainerComponents"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo_cadastro_quiz"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_nome_quiz"
+        style="@style/Edit_Text"
+        android:hint="@string/nome_quiz"
+        android:drawableRight="@drawable/ic_quiz"
+        android:inputType="textAutoComplete"
+        android:maxLength="25"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsCadastro" />
+
+    <EditText
+        android:id="@+id/edit_sub_titulo"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_text"
+        android:hint="@string/sub_titulo"
+        android:inputType="textEmailAddress"
+        android:maxLength="25"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/edit_nome_quiz" />
+
+    <EditText
+        android:id="@+id/edit_codigo_quiz"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_pass"
+        android:hint="@string/codigo_quiz"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/edit_sub_titulo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponentsCadastro"
+        android:hint="@string/registrar_quiz"
+        android:id="@+id/entrar"
+        android:layout_marginTop="30dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
