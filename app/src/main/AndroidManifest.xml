@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizTI3">
         <activity
+            android:name=".FormPerguntaAluno"
+            android:exported="false" />
+        <activity
+            android:name=".ListaQuizAluno"
+            android:exported="false" />
+        <activity
             android:name=".ListaPerguntasQuiz"
             android:exported="false" />
         <activity

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormPerguntaAluno">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_pergunta_quiz_aluno"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        android:id="@+id/titulo_cadastro_pergunta_quiz"/>
+
+
+    <View
+        android:id="@+id/containerComponentsCadastro"
+        style="@style/ContainerComponentsGrande"
+        app:layout_constraintStart_toEndOf="wrap_content"
+        app:layout_constraintEnd_toEndOf="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titulo_cadastro_pergunta_quiz"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1- Aqui vai a pergunta para o aluno responder."
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsCadastro"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="23dp"
+        android:id="@+id/titulo_lista_aluno_quiz"/>
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsCadastro"
+        >
+        <RadioButton android:id="@+id/radio_pirates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRIMEIRA RESPOSTA"
+
+            android:layout_marginLeft="40dp"/>
+        <RadioButton android:id="@+id/radio_ninjas1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEGUNDA RESPOSTA"
+
+            android:layout_marginLeft="40dp"/>
+        <RadioButton android:id="@+id/radio_ninjas2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TERCEIRA RESPOSTA"
+
+            android:layout_marginLeft="40dp"/>
+        <RadioButton android:id="@+id/radio_ninjas3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUARTA RESPOSTA"
+
+            android:layout_marginLeft="40dp"/>
+        <RadioButton android:id="@+id/radio_ninjas4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUINTA RESPOSTA"
+
+            android:layout_marginLeft="40dp"/>
+    </RadioGroup>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerComponentsCadastro"
+        android:hint="@string/registrar_resposta"
+        android:id="@+id/registrar_pergunta"
+        android:layout_marginTop="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
