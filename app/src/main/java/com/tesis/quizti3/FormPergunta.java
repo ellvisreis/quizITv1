@@ -1,5 +1,5 @@
 package com.tesis.quizti3;
-
+// modulo de formulario de perguntas
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;

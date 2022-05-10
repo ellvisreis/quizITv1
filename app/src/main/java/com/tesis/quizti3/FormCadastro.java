@@ -1,4 +1,5 @@
 package com.tesis.quizti3;
+//formulario de cadastro de perguntas
 
 import androidx.appcompat.app.AppCompatActivity;
 
