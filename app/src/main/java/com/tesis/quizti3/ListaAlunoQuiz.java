@@ -1,5 +1,5 @@
 package com.tesis.quizti3;
-//modulo para listar os alunos 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Home">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista menus"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/titulo_lista_quiz"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo_lista_quiz"
+        android:hint="Formulario Quiz"
+        android:id="@+id/id_formulario_quiz"
+
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_formulario_quiz"
+        android:hint="Registro Pergunta"
+        android:id="@+id/id_pergunta"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_pergunta"
+        android:hint="Registro de Pergunta Aluno"
+        android:id="@+id/id_form_pergunta_aluno"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_form_pergunta_aluno"
+        android:hint="Lista de Quiz Registrados"
+        android:id="@+id/id_lista_quiz"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_lista_quiz"
+        android:hint="Lista Quiz Perguntas"
+        android:id="@+id/id_lista_pergunta_quiz"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_lista_pergunta_quiz"
+        android:hint="Lista Quiz Alunos"
+        android:id="@+id/id_lista_quiz_aluno"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_lista_quiz_aluno"
+        android:hint="Lista Aluno Quiz"
+        android:id="@+id/id_lista_aluno_quiz"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

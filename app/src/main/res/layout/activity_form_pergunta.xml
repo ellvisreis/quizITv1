@@ -24,8 +24,8 @@
     <View
         android:id="@+id/containerComponentsCadastro"
         style="@style/ContainerComponentsGrande"
-        app:layout_constraintStart_toEndOf="wrap_content"
-        app:layout_constraintEnd_toEndOf="wrap_content"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titulo_cadastro_pergunta_quiz"
         />
 

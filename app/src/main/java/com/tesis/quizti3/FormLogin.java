@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class FormLogin extends AppCompatActivity {
 
     private TextView text_tela_cadastro;
+    private TextView entrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,10 +27,20 @@ public class FormLogin extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        entrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(FormLogin.this, Home.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void IniciarComponentes(){
 
         text_tela_cadastro = findViewById(R.id.text_tela_cadastro);
+        entrar = findViewById(R.id.entrar);
     }
 }

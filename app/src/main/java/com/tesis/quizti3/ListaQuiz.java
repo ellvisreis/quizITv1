@@ -1,5 +1,5 @@
 package com.tesis.quizti3;
-// modulo onde lista o quiz 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
