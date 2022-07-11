@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -33,21 +39,23 @@
     <EditText
         android:id="@+id/edit_nome_quiz"
         style="@style/Edit_Text"
-        android:hint="@string/nome_quiz"
         android:drawableRight="@drawable/ic_quiz"
+        android:hint="@string/nome_quiz"
         android:inputType="textAutoComplete"
         android:maxLength="25"
-        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
         app:layout_constraintTop_toTopOf="@id/containerComponentsCadastro" />
 
     <EditText
-        android:id="@+id/edit_sub_titulo"
+        android:id="@+id/edit_subtitulo_quiz"
         style="@style/Edit_Text"
         android:drawableRight="@drawable/ic_text"
         android:hint="@string/sub_titulo"
         android:inputType="textEmailAddress"
         android:maxLength="25"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
         app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
         app:layout_constraintTop_toBottomOf="@id/edit_nome_quiz" />
@@ -58,9 +66,10 @@
         android:drawableRight="@drawable/ic_pass"
         android:hint="@string/codigo_quiz"
         android:inputType="numberPassword"
-        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
-        app:layout_constraintTop_toBottomOf="@id/edit_sub_titulo" />
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toBottomOf="@id/edit_subtitulo_quiz" />
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/Button"
@@ -68,8 +77,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/containerComponentsCadastro"
         android:hint="@string/registrar_quiz"
-        android:id="@+id/entrar"
+        android:id="@+id/btn_incluir_quiz"
         android:layout_marginTop="30dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

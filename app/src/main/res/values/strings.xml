@@ -25,6 +25,7 @@
     <string name="titulo_lista_quiz_aluno">Meus QUIZ</string>
     <string name="titulo_pergunta_quiz_aluno">Questão 1 de 10 - JAVA</string>
     <string name="registrar_resposta">Registrar resposta</string>
+    <string name="codigo_quiz_pergunta">Código Quiz</string>
 
 
 </resources>

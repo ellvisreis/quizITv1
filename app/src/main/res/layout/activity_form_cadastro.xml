@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -33,12 +38,13 @@
     <EditText
         android:id="@+id/edit_nome"
         style="@style/Edit_Text"
-        android:hint="@string/nome"
         android:drawableRight="@drawable/ic_pessoa"
+        android:hint="@string/nome"
         android:inputType="textAutoComplete"
         android:maxLength="25"
-        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
         app:layout_constraintTop_toTopOf="@id/containerComponentsCadastro" />
 
     <EditText
@@ -48,6 +54,7 @@
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:maxLength="25"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
         app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
         app:layout_constraintTop_toBottomOf="@id/edit_nome" />
@@ -58,8 +65,9 @@
         android:drawableRight="@drawable/ic_pass"
         android:hint="@string/senha"
         android:inputType="numberPassword"
-        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
         app:layout_constraintTop_toBottomOf="@id/edit_email" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -68,8 +76,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/containerComponentsCadastro"
         android:hint="@string/registrar"
-        android:id="@+id/entrar"
+        android:id="@+id/btn_incluir_usuario"
         android:layout_marginTop="30dp"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

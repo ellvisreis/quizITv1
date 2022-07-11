@@ -101,17 +101,5 @@ public class Home extends AppCompatActivity {
         id_lista_pergunta_quiz = findViewById(R.id.id_lista_pergunta_quiz);
         id_lista_quiz_aluno = findViewById(R.id.id_lista_quiz_aluno);
         id_lista_aluno_quiz = findViewById(R.id.id_lista_aluno_quiz);
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.core.widget.NestedScrollView
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillViewport="true">
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -31,26 +30,30 @@
         app:layout_constraintTop_toBottomOf="@id/logo"
         />
 
-        <EditText
-            android:id="@+id/edit_email"
-            style="@style/Edit_Text"
-            android:hint="@string/email"
-            android:drawableRight="@drawable/ic_email"
-            android:inputType="textEmailAddress"
-            android:maxLength="25"
-            app:layout_constraintStart_toStartOf="@id/containerComponents"
-            app:layout_constraintEnd_toEndOf="@id/containerComponents"
-            app:layout_constraintTop_toTopOf="@id/containerComponents" />
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_email"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLength="25"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents"
+        tools:text="admin@gmail.com" />
 
-        <EditText
-            android:id="@+id/edit_senha"
-            style="@style/Edit_Text"
-            android:drawableRight="@drawable/ic_pass"
-            android:hint="@string/senha"
-            android:inputType="numberPassword"
-            app:layout_constraintStart_toStartOf="@id/containerComponents"
-            app:layout_constraintEnd_toEndOf="@id/containerComponents"
-            app:layout_constraintTop_toBottomOf="@id/edit_email" />
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_pass"
+        android:hint="@string/senha"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@id/edit_email" />
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/Button"
@@ -58,7 +61,7 @@
         app:layout_constraintEnd_toEndOf="@id/containerComponents"
         app:layout_constraintTop_toBottomOf="@id/edit_senha"
         android:hint="@string/entrar"
-        android:id="@+id/entrar"
+        android:id="@+id/btn_incluir_quiz"
         />
 
     <ProgressBar
