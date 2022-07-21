@@ -4,7 +4,9 @@ import static android.app.PendingIntent.getActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -58,14 +60,24 @@ public class FormLogin extends AppCompatActivity {
                         int cemail = cursor.getColumnIndex("email");
                         int cperfil = cursor.getColumnIndex("perfil");
 
+                        SharedPreferences prefs = getSharedPreferences("shared_login_data",   Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = prefs.edit();
+
+
                         cursor.moveToFirst();
 
                         if (cursor != null && cursor.getCount() == 1) {
                             if (cursor.getInt(cperfil) == 1) {
-                                intent = new Intent(FormLogin.this, ListaQuizAluno.class);
+                                editor.putInt("perfil", cursor.getInt(cperfil));
+
+                                editor.commit();
+                                intent = new Intent(FormLogin.this, HomeAluno.class);
                                 startActivity(intent);
                                 return;
                             } else if (cursor.getInt(cperfil) == 2) {
+                                editor.putInt("perfil", cursor.getInt(cperfil));
+
+                                editor.commit();
                                 intent = new Intent(FormLogin.this, Home.class);
                                 startActivity(intent);
                                 return;

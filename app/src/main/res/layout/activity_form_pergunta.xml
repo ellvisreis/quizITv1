@@ -12,19 +12,20 @@
     android:background="@drawable/background"
     tools:context=".FormPergunta">
 
+
     <TextView
+        android:id="@+id/titulo_cadastro_pergunta_quiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/titulo_pergunta_quiz"
-        android:textSize="50dp"
         android:textColor="@color/white"
+        android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="60dp"
-        android:id="@+id/titulo_cadastro_pergunta_quiz"/>
-
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/containerComponentsCadastro"
@@ -41,7 +42,7 @@
     <EditText
         android:id="@+id/edit_pergunta_quiz"
         style="@style/Edit_Text"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="96dp"
         android:drawableRight="@drawable/ic_quiz"
         android:hint="@string/pergunta_quiz"
         android:inputType="textAutoComplete"
@@ -62,6 +63,7 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
+        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
         app:layout_constraintTop_toBottomOf="@id/edit_pergunta_quiz" />
 
@@ -124,23 +126,33 @@
         android:hint="@string/codigo_quiz_pergunta"
         android:inputType="number"
         android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/edit_pergunta_quiz"
         app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
-        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
         app:layout_constraintTop_toTopOf="@+id/containerComponentsCadastro"
-        app:layout_constraintVertical_bias="0.875"
-        android:textColorHint="@color/black" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/registrar_pergunta"
         style="@style/Button"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="20dp"
         android:hint="@string/registrar_pergunta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/containerComponentsCadastro" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lista_pergunta"
+        style="@style/Button"
+        android:layout_marginTop="20dp"
+        android:hint="Listar Pergunta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registrar_pergunta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

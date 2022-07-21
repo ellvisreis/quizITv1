@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.core.widget.NestedScrollView
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillViewport="true">
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -17,14 +16,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/titulo_pergunta_quiz_aluno"
-        android:textSize="30dp"
+        android:text=""
+        android:textSize="00dp"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="0dp"
         android:id="@+id/titulo_cadastro_pergunta_quiz"/>
 
 
@@ -51,47 +50,56 @@
         android:id="@+id/titulo_lista_aluno_quiz"/>
 
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    <RadioGroup
+        android:id="@+id/radio_group_resposta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:orientation="vertical"
-        android:layout_marginTop="40dp"
-        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
         app:layout_constraintEnd_toEndOf="@id/containerComponentsCadastro"
-        app:layout_constraintTop_toTopOf="@id/containerComponentsCadastro"
-        >
-        <RadioButton android:id="@+id/radio_pirates"
+        app:layout_constraintStart_toStartOf="@id/containerComponentsCadastro"
+        app:layout_constraintTop_toTopOf="@id/containerComponentsCadastro">
+
+        <RadioButton
+            android:id="@+id/radio_resposta1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRIMEIRA RESPOSTA"
+            android:layout_marginLeft="40dp"
 
-            android:layout_marginLeft="40dp"/>
-        <RadioButton android:id="@+id/radio_ninjas1"
+            android:text="PRIMEIRA RESPOSTA" />
+
+        <RadioButton
+            android:id="@+id/radio_resposta2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SEGUNDA RESPOSTA"
+            android:layout_marginLeft="40dp"
 
-            android:layout_marginLeft="40dp"/>
-        <RadioButton android:id="@+id/radio_ninjas2"
+            android:text="SEGUNDA RESPOSTA" />
+
+        <RadioButton
+            android:id="@+id/radio_resposta3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TERCEIRA RESPOSTA"
+            android:layout_marginLeft="40dp"
 
-            android:layout_marginLeft="40dp"/>
-        <RadioButton android:id="@+id/radio_ninjas3"
+            android:text="TERCEIRA RESPOSTA" />
+
+        <RadioButton
+            android:id="@+id/radio_resposta4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="QUARTA RESPOSTA"
+            android:layout_marginLeft="40dp"
 
-            android:layout_marginLeft="40dp"/>
-        <RadioButton android:id="@+id/radio_ninjas4"
+            android:text="QUARTA RESPOSTA" />
+
+        <RadioButton
+            android:id="@+id/radio_resposta5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="QUINTA RESPOSTA"
+            android:layout_marginLeft="40dp"
 
-            android:layout_marginLeft="40dp"/>
+            android:text="QUINTA RESPOSTA" />
     </RadioGroup>
-
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/Button"

@@ -13,6 +13,9 @@
             android:name=".Home"
             android:exported="false" />
         <activity
+            android:name=".HomeAluno"
+            android:exported="false" />
+        <activity
             android:name=".FormPerguntaAluno"
             android:exported="false" />
         <activity
@@ -40,6 +43,16 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".ViewListContents"
+            android:exported="false" />
+        <activity
+        android:name=".ViewListContents_PerguntaQuiz"
+        android:exported="false" />
+        <activity
+            android:name=".ViewListContents_AlunoQuiz"
+            android:exported="false" />
+
+        <activity
             android:name=".FormLogin"
             android:exported="true">
             <intent-filter>
@@ -48,6 +61,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
